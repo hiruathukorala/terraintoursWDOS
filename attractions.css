@@ -1,0 +1,262 @@
+body {margin:0;font-family:Arial}
+	
+	
+.nav {
+  overflow: hidden;
+	background-color: rgb(78, 75, 75);
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a:hover {
+  background-color: rgb(153, 148, 148);
+	color: rgb(243, 235, 235);
+  }
+
+.active {
+  background-color: rgb(184, 178, 178);
+	color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+  .nav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+  }
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+#destination1 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des1.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+
+#destination2 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des2.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+#destination3 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des3.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+
+#destination4 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des4.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+#destination5 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des5.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+
+#destination6 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des6.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+#destination7 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des7.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+
+#destination8 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des8.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+#destination9 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des9.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+
+#destination10 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des10.jpg");
+  background-blend-mode: lighten;
+  margin: auto;
+}
+
+
+#destination11 { 
+  width: 1350px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("Images/des11.jpg");
+  background-blend-mode: lighten;
+   margin: auto;
+}
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+table,td,th {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table {
+   border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+   
+    
+  }
+  
+  th, td {
+    padding: 5px;
+    
+    
+  }
+  .button
+  {
+    background-color: rgb(12, 83, 107);
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  
+  
+}
+
+
+
+  .footer
+  {
+left: 0;
+position: relative;
+bottom: 0;
+width: 100%;
+height: 15px;
+background-color: rgb(98, 212, 250);
+color: black;
+text-align: left;
+
+  }
+
+
+
+
+  
+  
