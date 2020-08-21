@@ -1,0 +1,161 @@
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=s1">
+<style>
+img {
+  border: 2px solid white;
+  border-radius:30px;
+  padding: 20px;
+  width: 380px;
+  height: 200px;
+}
+
+img:hover {
+  box-shadow: 0 0 5px 5px rgb(230, 227, 227);
+}
+</style>
+</head>
+<body>
+
+
+
+  
+
+  <p><h1 style="text-align:center;font-size:220%;font-family: cursive;color:rgb(2, 1, 1)">
+    Choose your Destination
+    </h1></p>
+
+    
+
+
+
+
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 450px 450px 450px ;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    background-color: white;
+    padding: 2px;
+  }
+  
+  .grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  </style>
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="item1">
+        <a target="_blank" href="https://www.google.com/maps/place/Jungle+Beach/@6.018686,
+        80.2375357,18z/data=!3m1!4b1!4m5!3m4!1s0x3ae172f940bf9841:0xfe2eceeb0aa33a47!8m2!3d6.
+        0186943!4d80.2394104">
+          <img src="thumb5.png" alt="thumb5" style="width:400px;height: 300;">
+        </a>
+      </div>
+      <div class="item2">
+        <a target="_blank" href="https://www.google.com/maps/place/Ambalangoda/@6.2471307
+        ,80.0387986,14z/data=!3m1!4b1!4m5!3m4!1s0x3ae1822ba5da53a1:0xe1ca72d5d96668ec!8m2!3d6.
+        2441521!4d80.0590804">
+          <img src="thumb2.png" alt="thumb2" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item3">
+        <a target="_blank" href="https://www.google.com/maps/place/Bentota/@6.4256564
+        ,79.9861482,14z/data=!3m1!4b1!4m5!3m4!1s0x3ae22e900168ca21:0x96c438f00a68c060!8m2!3d6.4189175
+        !4d80.005979">
+          <img src="thumb13.png" alt="thumb13" style="width:400px;height: 300;">
+        </a>
+      </div>  
+
+      <div class="item4">
+        <a target="_blank" href="https://www.google.com/maps/place/Kitulgala/@6.9915605,
+        80.4024122,14z/data=!3m1!4b1!4m5!3m4!1s0x3ae3a01d4b2a337b:0x54abb9abd813b04a!8m2!3d6.9897845!4d80.
+        4270885">
+          <img src="thumb11.png" alt="thumb11" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item5">
+        <a target="_blank" href="https://www.google.com/maps/place/Nelligala+Rd/@7.3053483,
+        80.5571743,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3699a40db8feb:0xc50b234e7e96920c!8m2!3d7.3053483!4d80
+        .559363">
+          <img src="thumb7.png" alt="thumb7" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item6">
+        <a target="_blank" href="https://www.google.com/maps/place/Ratnapura/@6.7167707,80.
+        3000995,12z/data=!3m1!4b1!4m5!3m4!1s0x3ae3beb435df712f:0xc14a5df053ff0561!8m2!3d6.7055742!4d80
+        .3847345">
+          <img src="thumb10.png" alt="thumb10" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item7"> <a target="_blank" href="https://www.google.com/maps/place/Colombo/@6.9218374,
+        79.8211859,13z/data=!3m1!4b1!4m5!3m4!1s0x3ae253d10f7a7003:0x320b2e4d32d3838d!8m2!3d6.
+        9270786!4d79.861243">
+        <img src="thumb8.png" alt="thumb8" style="width:400px;height: 300;">
+      </a></div>
+
+      <div class="item8">
+        <a target="_blank" href="https://www.google.com/maps/place/Dambulla/@7.8811875,80.
+        5594717,11z/data=!3m1!4b1!4m5!3m4!1s0x3afcaff4c8adcc4f:0x67ae3cc5b1536914!8m2!3d7.874217
+        !4d80.6511287">
+          <img src="thumb9.png" alt="thumb9" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item9">
+        <a target="_blank" href="https://www.google.com/maps/place/Anuradhapura/@8.3351457,80.3332731,
+        12z/data=!3m1!4b1!4m5!3m4!1s0x3afcf4f99360e159:0xc111fe9ebc6dcf0e!8m2!3d8.3113518!4d80.4036508">
+          <img src="thumb3.png" alt="thumb3" style="width:400px;height: 300;">
+        </a>
+      </div>  
+
+      <div class="item10">
+        <a target="_blank" href="https://www.google.com/maps/place/Polonnaruwa/data=!4m2!3m1!1s0x3afb44ba3b
+        16ce27:0xc34997a2b3032b7c?sa=X&ved=2ahUKEwiq9rvDwdvqAhUKSX0KHRBrDxYQ8gEwFnoECBsQBg">
+          <img src="thumb4.png" alt="thumb4" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item11">
+        <a target="_blank" href="https://www.google.com/maps/place/Galle/data=
+        !4m2!3m1!1s0x3ae173bb6932fce3:0x4a35b903f9c64c03?sa=X&ved=2ahUKEwiZ0t3dwdvqAhWMaCsKHW8lBhMQ8gEwFHoECBsQBg">
+          <img src="thumb6.png" alt="thumb6" style="width:400px;height: 300;">
+        </a>
+      </div>
+
+      <div class="item12">
+        <a target="_blank" href="https://www.google.com/maps/place/Kandy/data=
+        !4m2!3m1!1s0x3ae366266498acd3:0x411a3818a1e03c35?sa=X&ved=2ahUKEwiXluHuwdvqAhULXisKHd7eBhgQ8gEwFHoECBsQBg">
+          <img src="thumb1.png" alt="thumb1" style="width:400px;height: 300;">
+        </a>
+      </div>
+    </div>
+
+  </body>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,283 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Transport
+	</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<body style="background-color:white">
+
+
+	
+	
+	<link rel="stylesheet" href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\TRANSPORT page\transport.css">
+	<link rel="stylesheet" href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\TRANSPORT page\tr.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	
+
+
+
+		
+		
+	  <div id="navbar">
+		<a class="active" href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\HOME page/home.html">Home</a>
+		<a href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\ATTRACTIONS page/attraction.html">Attractions</a>
+		<a href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\ACCOMODATION page/accomodation.html">Acommodation</a>
+		<a href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\TRANSPORT page/transport.html">Transport</a>
+		<a href="E:\DOCUMENTS\FIRST YEAR SEMESTER 01\WDOS\Assignments\CONTACT page/contact.html">Contact</a>
+
+	  </div>
+	  
+
+
+
+
+
+
+	
+	
+
+<h1 style="margin-top: 20px;margin-bottom: 20px;font-family:cursive;margin-left:70px;text-align: center;color:rgb(9, 9, 109);
+font-size: 40px;">
+				Transport</h1>
+		<div class="container1">
+  
+  <div class="row1">
+      <label for="taxiType" style="font-size: 18px;">Taxi type</label>
+    </div>
+      <select id="taxiType" name="taxiType" onchange="taxiTypeChanged()">
+		<option value="">Select Taxi type</option>
+        <option value="Tuk Tuk">Tuk Tuk</option>
+        <option value="Mini Car">Mini Car</option>
+        <option value="Luxury Car">Luxury Car</option>
+		<option value="Luxury Van">Luxury Van</option>
+		<option value="Luxury Bus">Luxury Bus</option>
+      </select>
+       </div>
+  </div>
+  <div class="row1">
+      <label for="fuel"style="font-size: 18px;">Fuel-Efficiency</label>
+    </div>
+    <select  name="fuel" id="Fuel" onchange="fuelEfficiencyChanged()">
+	  <option value="">Select Fuel Efficiency</option>
+        <option value="High">High</option>
+        <option value="Medium">Medim(default)</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+  </div>
+  <div class="row1">
+      <label for="stay" style="font-size: 18px;">Way</label>
+    </div>
+      <select name="stay" id="Stay" onchange="stayChanged()">
+	  <option value="One Way">Select Way Type</option>
+        <option value="One Way">One Way</option>
+        <option value="Two Way">Two Way</option>
+        <option value="Over Night">Over night</option>
+      </select>
+    </div>
+  </div>
+  <div class="row1">
+      <label for="fname" style="font-size: 18px;">Distance</label>
+       </div>
+      <input type="text" id="Distance" name="distance" placeholder="Distance" onchange="currentDistanceChanged(this.value)">
+    </div>
+    </div>
+   <div class="row1">
+      <label for="lname" style="font-size: 18px;">Pick Up Location</label>
+    </div>
+      <input type="text" id="location" name="location" placeholder="Pick Up Location">
+    </div>
+  </div>
+  
+  <div class="br">
+	<input class="btn" type="submit" value="Order Favourite" style="background-color: rgb(28, 101, 134);
+	font-size:18px;margin-top: 2px;margin-bottom: 4px;" onclick="getFromFavourite()">
+	<input class="btn" type="submit" value="Add to Favourite"style="background-color:rgb(28, 101, 134);
+	font-size:18px;margin-top: 2px;margin-bottom: 4px;"  onclick="addFavourite()"> 
+	<input class="btn" type="submit" value="Reserve"style="background-color: rgb(28, 101, 134);font-size:18px;
+	margin-top: 2px;margin-bottom: 4px;"  onclick="reserve()">  
+	<input class="btn" type="submit" value="Add Order"style="background-color: rgb(28, 101, 134);font-size:18px;
+	margin-top: 2px;margin-bottom: 4px;"  onclick="addOrder()">
+  </div>
+</div>
+<div class="br">
+
+  <div class="scolumn">
+  <h4 class="ttopic">Current Reservation</h4><br>
+	  <label class = "label" for="currentTaxi" id="currentTaxi">Current Taxi : -</label><br><br>
+	  <label class = "label" for="currentTaxi" id="fuelEfficiency">Fuel Efficiency : -</label><br><br>
+	  <label class = "label" for="currentTaxi" id="StayCurrent">Stay : -</label><br><br>
+	  <label class = "label"  id="currentDistance">Distance : 0</label><br><br>
+	  <label class = "label" for="costofcurrent" id="currentCost">Cost of Current Taxi : 0</label> <br> 
+  </div>
+  
+  <div class="scolumn">
+	<h4 class="ttopic">Overall Reservation</h4><br>
+		<label class = "label" for="overallOrder">All Taxi(s)</label>
+		<label class = "label" id="lbl1">.</label><br><br>
+		<label class = "label" for="overallOrder">Overall Cost</label>
+		<label class = "label" id="lbl2"> 0 </label><br><br>
+		<label class = "label" for="overallOrder">Total Distance</label>
+		<label class = "label" id="lbl3"> 0 </label><br><br>
+  </div>
+  
+</div>
+
+
+
+	</body>
+	<div class="footer">
+		
+	  </div>
+
+</body>
+
+
+<script>
+	var type = '';
+	var distance = 0;
+	var fuelEfficiency = '';
+	var stay = '';
+	var Cost = 0;
+	function taxiTypeChanged() {
+		type = document.getElementById("taxiType").value;
+		document.getElementById("currentTaxi").innerHTML = "Current Taxi : " + type;
+		cost();
+	}
+	function fuelEfficiencyChanged() {
+		fuelEfficiency = document.getElementById("Fuel").value;
+		document.getElementById("fuelEfficiency").innerHTML = "Fuel Efficiency : " + fuelEfficiency;
+		cost();
+	}
+	function stayChanged() {
+		stay = document.getElementById("Stay").value;
+		document.getElementById("StayCurrent").innerHTML = "Stay : " + stay;
+		cost();
+	}
+	function currentDistanceChanged(val) {
+		distance = val;
+		document.getElementById("currentDistance").innerHTML = "Distance : " + distance;
+		cost();
+	}
+	
+	function cost() {
+		
+		var costType = 0;
+		var costStay = 0;
+		var costFlue = 0;
+		
+		if(type == "Tuk Tuk") {
+			costType = 50;
+		}
+		if(type == "Mini Car") {
+			costType = 75;
+		}
+		if(type == "Luxury Car") {
+			costType = 100;
+		}
+		if(type == "Luxury Van") {
+			costType = 150;
+		}
+		if(type == "Luxury Bus") {
+			costType = 200;
+		}
+		
+		
+		if(fuelEfficiency == "High") {
+			costFlue = 2000;
+		}
+		if(fuelEfficiency == "Medium") {
+			costFlue = 1000;
+		}
+		if(fuelEfficiency == "Low") {
+			costFlue = 500;
+		}
+		
+		if(stay == "One Way") {
+			costStay = costType * distance;
+		}
+		if(stay == "Two Way") {
+			costStay = 2 * (costType * distance);
+		}
+		if(stay == "Over Night") {
+			costStay = 2 * (costType * distance) + 5000;
+		}
+		
+		Cost = costFlue + costStay;
+		document.getElementById("currentCost").innerHTML = "cost of current Taxi  : " + Cost;
+	}
+	
+	function addOrder() {
+		var currentTaxis = document.getElementById("lbl1").innerHTML;
+		var allTaxis = currentTaxis  +  type + " , ";
+		document.getElementById("lbl1").innerHTML = allTaxis;
+		
+		
+		//document.getElementById("lbl2").innerHTML = "0";
+		var currentTot = document.getElementById("lbl2").innerHTML;
+		var tot = parseInt(Cost , 10) +  parseInt(currentTot , 10);
+		document.getElementById("lbl2").innerHTML = tot;
+		
+		
+		var currentTotDistance = document.getElementById("lbl3").innerHTML;
+		var totDistance = parseInt(distance , 10) +  parseInt(currentTotDistance , 10);
+		document.getElementById("lbl3").innerHTML = totDistance;
+	}
+	
+	function reserve() { 
+		document.getElementById("lbl1").innerHTML = "";
+		document.getElementById("lbl2").innerHTML = "0";
+		document.getElementById("lbl3").innerHTML = "0";
+		
+		document.getElementById("currentCost").innerHTML = "cost of current Taxi  : " ;
+		document.getElementById("currentDistance").innerHTML = "Distance : ";
+		document.getElementById("StayCurrent").innerHTML = "Stay : ";
+		document.getElementById("fuelEfficiency").innerHTML = "Fuel Efficiency : ";
+		document.getElementById("currentTaxi").innerHTML = "Current Taxi : " ;
+		
+		alert("Reservation Successfull. Thank you.");
+	}
+	
+	function addFavourite() { 
+		var location = document.getElementById("location").value;
+		localStorage.setItem("taxiType",type);
+		localStorage.setItem("distance",distance);
+		localStorage.setItem("fuelEfficiency",fuelEfficiency);
+		localStorage.setItem("stay",stay);
+		localStorage.setItem("location",location);
+		localStorage.setItem("Cost",Cost);
+		alert(localStorage.getItem("stay"));
+	}
+	function getFromFavourite() { 
+		document.getElementById("currentCost").innerHTML = "cost of current Taxi  : " +  localStorage.getItem("Cost");
+		document.getElementById("currentDistance").innerHTML = "Distance : " + localStorage.getItem("distance");
+		document.getElementById("StayCurrent").innerHTML = "Stay : " + localStorage.getItem("stay");
+		document.getElementById("fuelEfficiency").innerHTML = "Fuel Efficiency : " + localStorage.getItem("fuelEfficiency");
+		document.getElementById("currentTaxi").innerHTML = "Current Taxi : "  + localStorage.getItem("taxiType");
+		
+		
+		document.getElementById("taxiType").value = localStorage.getItem("taxiType");
+		document.getElementById("Fuel").value = localStorage.getItem("fuelEfficiency");
+		document.getElementById("Stay").value = localStorage.getItem("stay");
+		document.getElementById("Distance").value = localStorage.getItem("distance");
+		document.getElementById("location").value = localStorage.getItem("location");
+
+	}
+</script>
+
+
+
+</body>
+</html>	
